@@ -1,0 +1,300 @@
+* {
+  background-color: #fff;
+  font-family: 'Righteous', cursive;
+  margin: 0;
+}
+
+body {
+  margin: 10px 30px
+}
+
+.cont-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cont-top .logo-name {
+  font-weight: 700;
+}
+
+.cont-top nav a {
+  margin: 0 7px;
+  
+  text-decoration: none;
+  color: rgb(76, 72, 72);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Main content */
+.cont-main {
+  margin: auto;
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+.cont-main .profile {
+  display: flex;
+  gap: 10px;
+}
+
+.cont-main .profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  gap: 20px;
+}
+
+.profile-info h1 {
+  font-weight: 700;
+}
+
+.profile-info span {
+  font-size: 14px;
+}
+
+.profile-pic .pic {
+  width: 200px;
+  height: 200px;
+  border: 5px solid rgb(61, 60, 60);
+  float: left;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  background: url(/images/profile-pic.jpg) no-repeat;
+  background-size: cover;
+  background-position: top -10px center;
+  background-blend-mode: multiply;
+  animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+
+  margin-top: 50px;
+}
+
+.tech-stack h4 {
+  font-weight: 500;
+}
+
+.tech-stack-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+.tech-stack-icons img {
+  width: 20px;
+}
+
+/* --------About Section------- */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin: auto;
+  margin-bottom: 300px;
+  width: 50%;
+}
+
+.about-me-pic {
+  width: 240px;
+  border-radius: 10px;
+}
+
+.about-me .about-info h4 {
+  color: rgb(17, 142, 220);
+}
+
+.about-me .about-info span {
+  font-size: 13px;
+  color: #878686
+}
+
+/* -------Project Section------ */
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+
+  margin: auto;
+  margin-bottom: 300px;
+  width: 50%;
+}
+
+.project .project-top h4 {
+  color: rgb(17, 142, 220);
+}
+
+.project .demo {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 20px;
+}
+
+.project .demo-view img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.project .demo .demo-try {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.project .demo .demo-try h3 {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.project .demo .demo-try span {
+  width: 250px;
+  font-size: small;
+  text-align: center;
+}
+
+.project .demo .tech-used {
+  margin-top: 10px;
+}
+
+.demo .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+.demo .buttons img {
+  width: 20px;
+}
+
+/* -------Contact Section------ */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+
+  margin: auto;
+  margin-bottom: 100px;
+  width: 50%;
+}
+
+.contact .top h4 {
+  color: rgb(17, 142, 220);
+}
+
+.contact .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+
+  margin: 23px;
+}
+
+.contact .bottom img {
+  width: 30px;
+}
+
+.contact .bottom .location, .contact .bottom .mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact .bottom h3 {
+  font-size: 15px;
+}
+
+.contact .bottom span {
+  font-size: 13px;
+}
+
+/* MEDIA QUERIES */
+/* Responsive design for larger tablets and Ipad */
+@media screen and (max-width: 1200px) {
+ .cont-main, .about-me, .project, .contact {
+    width: 70%;
+ }
+}
+
+/* Responsive design for smaller tablets and mobile */
+@media screen and (max-width: 768px) {
+  .cont-main .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+  
+    margin-top: 50px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .contact .bottom {
+    margin: 20px 0 0 0;
+  }
+
+  .contact .bottom .location, .contact .bottom .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .project .demo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    margin-top: 20px;
+  }
+ }
