@@ -63,7 +63,7 @@ body {
   border: 5px solid rgb(61, 60, 60);
   float: left;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  background: url(/images/profile-pic.jpg) no-repeat;
+  background: url(../images/profile-pic.jpg) no-repeat;
   background-size: cover;
   background-position: top -10px center;
   background-blend-mode: multiply;
