@@ -2,6 +2,7 @@
   background-color: #fff;
   font-family: 'Righteous', cursive;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
